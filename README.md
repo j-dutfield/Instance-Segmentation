@@ -13,15 +13,25 @@ Run on Virtual Env with the following spec & dependencies:
 Python 3.7
 
 numpy
+
 pandas
+
 tensorflow=1.1.5
+
 keras=2.2
+
 sklearn
+
 matplotlib
+
 PIL
+
 h5py=2.9.0
+
 coco https://github.com/cocodataset/cocoapi
+
 cv2
+
 mcrnn https://github.com/matterport/Mask_RCNN
 
 NOTES:
