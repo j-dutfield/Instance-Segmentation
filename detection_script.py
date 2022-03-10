@@ -1,5 +1,5 @@
 # Connect to Virtual Env
-weights_dir=""
+weights_dir="" #enter dir for training weights from callback
 # Imports
 import os
 import tensorflow as tf
@@ -289,16 +289,10 @@ class CatDogConfig(Config):
     GPU_COUNT = 1
     IMAGES_PER_GPU=1
     MAX_GT_INSTANCES=2
-    #IMAGES_PER_GPU = 1
     NUM_CLASSES = 3
     IMAGE_MAX_DIM=640
     IMAGE_MIN_DIM=640
     IMAGE_SHAPE=[640, 640, 3]
-    #MASK_SHAPE=[640,640]
-    #MASK_SIZE=[640,640]
-    #MINI_MASK_SHAPE=[640,640]
-    #IMAGE_RESIZE_MODE = "scale"
-    #IMAGE_MIN_SCALE = 5.0
     USE_MINI_MASK=False
     DETECTION_MAX_INSTANCES=1
     TRAIN_ROIS_PER_IMAGE=10
@@ -306,7 +300,6 @@ class CatDogConfig(Config):
     POST_NMS_ROIS_INFERENCE=20
     POST_NMS_ROIS_TRAINING=20
     PRE_NMS_LIMIT=30
-    #TOP_DOWN_PYRAMID_SIZE=16
     STEPS_PER_EPOCH=batch_size//BATCH_SIZE
     
 
