@@ -1,5 +1,10 @@
 # Instance-Segmentation
 
+Instance segmentation task using the oxford pets dataset: https://github.com/tensorflow/datasets/blob/master/tensorflow_datasets/image_classification/oxford_iiit_pet.py
+
+MRCNN used with coco pre-trained weights (ref in dependencies). Methodology is transfer learning from that start-point.
+
+
 Script run on:
 
 macOS Catalina 10.15.7
@@ -15,6 +20,7 @@ keras=2.2
 sklearn
 matplotlib
 PIL
+h5py=2.9.0
 coco https://github.com/cocodataset/cocoapi
 cv2
 mcrnn https://github.com/matterport/Mask_RCNN
