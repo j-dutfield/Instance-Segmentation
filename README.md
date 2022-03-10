@@ -18,3 +18,11 @@ PIL
 coco https://github.com/cocodataset/cocoapi
 cv2
 mcrnn https://github.com/matterport/Mask_RCNN
+
+NOTES:
+
+Only 1 epoch of 2 images currently set on training_script.py. This is becuase macbook could not handle more. Manually increase generator count and number of epochs for full training. 
+
+Augmentation parameter on mrcnn in training mode can be set to augment inputs during full training.
+
+Training weights are automatically saved as callback. The path to these weights needs to be added at the start of detection_script.py before running. 
