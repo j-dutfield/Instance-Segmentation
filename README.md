@@ -4,7 +4,6 @@ Instance segmentation task using the oxford pets dataset: https://github.com/ten
 
 MRCNN used with coco pre-trained weights (ref in dependencies). Methodology is transfer learning from that start-point.
 
-
 Script run on:
 
 macOS Catalina 10.15.7
@@ -32,3 +31,5 @@ Only 1 epoch of 2 images currently set on training_script.py. This is becuase ma
 Augmentation parameter on mrcnn in training mode can be set to augment inputs during full training.
 
 Training weights are automatically saved as callback. The path to these weights needs to be added at the start of detection_script.py before running. 
+
+Some work needed to path directories into the correct place after cloning.
